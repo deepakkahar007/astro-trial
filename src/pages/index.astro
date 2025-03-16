@@ -1,9 +1,23 @@
 ---
-import Welcome from "../components/Welcome.astro";
-import Layout from "../layouts/Layout.astro";
 import "../styles/global.css";
+import Business from "../components/Business.astro";
+import DataRepository from "../components/DataRepository.astro";
+import Header from "../components/Header.astro";
+import Leads from "../components/Leads.astro";
+import Services from "../components/Services.astro";
+import Layout from "../layouts/Layout.astro";
+import DigitalSection from "../components/DigitalSection.astro";
+import CaseStudies from "../components/CaseStudies.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-  <Welcome />
+  <Header />
+  <Business />
+  <DataRepository />
+  <Leads />
+  <Services />
+  <DigitalSection />
+  <CaseStudies />
+  <Footer />
 </Layout>

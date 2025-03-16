@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import { CaseStudy } from "../assets";
+---
+
+<div class="mt-32 w-full px-10 flex items-center justify-between">
+  <div class="flex flex-col gap-10 justify-between h-full">
+    <h1 class="text-4xl font-extrabold">Case Studies</h1>
+    <p class="w-72">
+      Our accomplishments underscore our commitment to creating a lasting impact
+      within our industry and beyond.
+    </p>
+    <button class="btn btn-primary btn-wide rounded-xl">Get a Proposal</button>
+  </div>
+
+  <div>
+    <Image src={CaseStudy} alt={"case study image"} />
+  </div>
+</div>

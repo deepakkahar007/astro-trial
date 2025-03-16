@@ -1,0 +1,27 @@
+---
+import { Image } from "astro:assets";
+import { SmartServe } from "../assets";
+---
+
+<div class="w-full mt-10 px-12">
+  <h1 class="text-4xl font-bold my-4">Smart Serve</h1>
+
+  <p class="text-lg font-semibold text-gray-600 my-4">
+    This innovative table-top ordering system, integrated with advanced
+    analytics and AI capabilities, streamlines operations, optimizes workflow
+    efficiency, enhances customer satisfaction through personalized experiences,
+    and ultimately boosts restaurant profitability by enabling data-driven
+    decision-making and improved service delivery. <span class="text-blue-800"
+      >Learn more</span
+    >
+  </p>
+  <button class="btn btn-primary btn-wide my-6 rounded-full"
+    >Free Install</button
+  >
+
+  <div class="w-full object-contain p-2">
+    <Image src={SmartServe} alt={"smart serve"} class={"object-contain"} />
+  </div>
+
+  <p class="text-center text-xl text-blue-700">Learn More</p>
+</div>

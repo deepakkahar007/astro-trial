@@ -1,0 +1,77 @@
+---
+import { Image } from "astro:assets";
+import { Home, Call, Meta, ArrowRight } from "../assets";
+---
+
+<div class="h-screen bg-[#2302ff] px-14 py-4">
+  <!-- header -->
+  <header class="flex justify-between items-center">
+    <!-- logo and header -->
+    <div class="flex items-center justify-center gap-2">
+      <Image src={Home} alt={"home svg icon"} height={30} width={30} />
+      <h1 class="text-xl font-extrabold text-white">Deployca</h1>
+    </div>
+
+    <!-- nav links -->
+    <nav class="flex gap-2">
+      <a href="/">
+        <button
+          class="btn btn-ghost rounded-xl text-white font-bold hover:text-black"
+          >About Us</button
+        >
+      </a>
+      <a href="/">
+        <button
+          class="btn btn-ghost rounded-xl text-white font-bold hover:text-black"
+          >Store</button
+        >
+      </a><a href="/">
+        <button
+          class="btn btn-ghost rounded-xl text-white font-bold hover:text-black"
+          >Services</button
+        >
+      </a><a href="/">
+        <button
+          class="btn btn-ghost rounded-xl text-white font-bold hover:text-black"
+          >Products</button
+        >
+      </a>
+    </nav>
+
+    <!-- contact us  -->
+
+    <button class="btn text-black border-[#e5e5e5] rounded-full">
+      <Image src={Call} alt="call svg icon" width={20} height={20} />
+      Contact Us
+    </button>
+  </header>
+
+  <!-- hero -->
+
+  <div class="flex justify-between items-center mt-32">
+    <div class="flex flex-col justify-between w-1/2 gap-12">
+      <h1 class="flex flex-col font-extrabold text-4xl text-white">
+        Scale up your business using our
+        <div class="my-4"></div>
+        techno-marketing solutions
+      </h1>
+      <h2 class="text-white font-semibold text-xl">
+        Build a strong digital establishment and turn your <br /> growth vision to
+        a success story.
+      </h2>
+      <button class="btn max-w-44 rounded-full text-xl text-blue-800">
+        <Image
+          src={ArrowRight}
+          alt={"arrow right icon"}
+          width={20}
+          height={20}
+        />
+        Start now</button
+      >
+    </div>
+
+    <div class="w-1/3 rounded-lg object-contain">
+      <Image src={Meta} alt={"the meta image"} />
+    </div>
+  </div>
+</div>
